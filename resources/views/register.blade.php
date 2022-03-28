@@ -3,20 +3,25 @@
 <div class="container custom-login">
     <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
-            <form action="login" method="POST">
-                    @csrf
+            <form action="register" method="POST">
+              @csrf
+              <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="Enter User Name" required>
+                      
+                </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                    
+                      
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                 </div>
                 
-                <button type="submit" class="btn btn-primary">Login</button>
-                <a href="/register" class="btn btn-info">Register Now</a>
+                <button type="submit" class="btn btn-info">Register</button>
+                <a href="/login" class="btn btn-primary">Login</a>
             </form>
         </div>
     </div>
