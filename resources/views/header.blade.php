@@ -16,6 +16,7 @@ if(Session::has('user')){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" href="/"><img src="http://www.mobiot.in/images/ecom.png" style="height:20px !important"/></a>
       <a class="navbar-brand" href="/">Ecommerce Xpress</a>
     </div>
 
